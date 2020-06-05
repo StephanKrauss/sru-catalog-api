@@ -1,11 +1,11 @@
 {
-    "name": "libreja/sru-catalog-fetcher-php",
+    "name": "libreja/sru-catalog-api",
     "description": "Fetches books/etc from different catalogs",
     "keywords": [
         "league",
         "package"
     ],
-    "homepage": "https://github.com/libreja/sru-catalog-fetcher-php",
+    "homepage": "https://github.com/libreja/sru-catalog-api",
     "license": "MIT",
     "authors": [
         {
