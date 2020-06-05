@@ -1,10 +1,10 @@
 # Catalog Fetcher
 
-[![Latest Version](https://img.shields.io/github/release/libreja/sru-catalog-fetcher-php.svg?style=flat-square)](https://github.com/libreja/sru-catalog-fetcher-php/releases)
+[![Latest Version](https://img.shields.io/github/release/libreja/sru-catalog-api.svg?style=flat-square)](https://github.com/libreja/sru-catalog-api/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/libreja/sru-catalog-fetcher-php/master.svg?style=flat-square)](https://travis-ci.org/libreja/sru-catalog-fetcher-php)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/libreja/sru-catalog-fetcher-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/libreja/sru-catalog-fetcher-php/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/libreja/sru-catalog-fetcher-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/libreja/sru-catalog-fetcher-php)
+[![Build Status](https://img.shields.io/travis/libreja/sru-catalog-api/master.svg?style=flat-square)](https://travis-ci.org/libreja/sru-catalog-api)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/libreja/sru-catalog-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/libreja/sru-catalog-api/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/libreja/sru-catalog-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/libreja/sru-catalog-api)
 [![Total Downloads](https://img.shields.io/packagist/dt/league/skeleton.svg?style=flat-square)](https://packagist.org/packages/league/skeleton)
 
 **Note:** Replace `skeleton` with the correct package name in the above URLs, then delete this line.
@@ -40,7 +40,7 @@ var_dump($sruCatalog->parse([
 | title | Titel | x | x | x | x | x |
 | author | Autor | x | x | x | x | x |
 | subject | Stichwort | x | x | x | x | x |
-| idn | Identifikationnr des Catalogs (ppn) | x | x | x | x | x |
+| idn | Identifikationnr des Katalogs (ppn) | x | x | x | x | x |
 | isxn | ISXN | x | x | x | x | x |
 | isbn | ISBN | x | x |  |  | x |
 | issn | ISSN | x |  |  |  | x |
