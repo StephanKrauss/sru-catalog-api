@@ -1,0 +1,40 @@
+{
+    "name": "libreja/sru-catalog-fetcher-php",
+    "description": "Fetches books/etc from different catalogs",
+    "keywords": [
+        "league",
+        "package"
+    ],
+    "homepage": "https://github.com/libreja/sru-catalog-fetcher-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Schibel",
+            "email": "martin@libreja.de",
+            "homepage": "http://author-website.example.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+        "ext-intl" : "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libreja\\SruCatalog\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Libreja\\SruCatalog\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
