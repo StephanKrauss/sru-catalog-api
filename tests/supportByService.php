@@ -14,9 +14,10 @@ foreach($sruCatalog->getServices() as $serviceKey=>$serviceValue){
     array_push($table[$searchKey],array_key_exists($searchKey,$serviceValue["search"]));
   }
 }
+$html .="\n|-|-|-|-|-|-|";
 
 foreach($table as $key => $value){
-  $html .= "\n| ".$key." | ";
+  $html .= "\n| ".$key." |";
   foreach($value as $exists){
     $html .= " ".($exists?"x":"")." |";
   }
