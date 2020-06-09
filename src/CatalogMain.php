@@ -497,17 +497,21 @@ class CatalogMain
     switch (@$mapping['func']) {
       case 'role':
         //add role to last person
-        end($result['author']);
-        $lastItemI = key($result['author']);
-        reset($result['author']);
-        $result['author'][$lastItemI] .= ' [' . $value . ']';
+        if(array_key_exists('author',$result)) {
+          end($result['author']);
+          $lastItemI = key($result['author']);
+          reset($result['author']);
+          $result['author'][$lastItemI] .= ' [' . $value . ']';
+        }
         break;
       case 'role_secondaryPerson':
         //add role to last person
-        end($result['secondaryPerson']);
-        $lastItemI = key($result['secondaryPerson']);
-        reset($result['secondaryPerson']);
-        $result['secondaryPerson'][$lastItemI] .= ' [' . $value . ']';
+        if(array_key_exists('secondaryPerson',$result)) {
+          end($result['secondaryPerson']);
+          $lastItemI = key($result['secondaryPerson']);
+          reset($result['secondaryPerson']);
+          $result['secondaryPerson'][$lastItemI] .= ' [' . $value . ']';
+        }
         break;
       case 'parenthesis':
         //add role to last person
