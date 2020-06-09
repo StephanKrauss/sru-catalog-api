@@ -9,6 +9,8 @@
 
 This repository fetches serveral (mostly German) catalogs and converts the entries to an array
 
+Please use with caution, happy to invite new contributors.
+
 ## Install
 
 Via Composer
@@ -57,15 +59,16 @@ var_dump($sruCatalog->parse([
 ## Testing
 
 ``` bash
-$ phpunit
+$ vendor/bin/phpunit tests/TestAllServices.php 
 ```
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/thephpleague/:package_name/blob/master/CONTRIBUTING.md) for details.
+Please contact us
 
 ## Credits
 
+- Libreja (https://www.libreja.de/)
 - Martin Schibel (https://github.com/mshd)
 
 ## License
