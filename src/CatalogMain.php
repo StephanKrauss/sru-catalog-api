@@ -293,7 +293,6 @@ class CatalogMain
 
     //format price
     if (array_key_exists('price', $result)) {
-      error_log($result["price"][0]);
 
       $ll = explode(':', $result['price'][0]);
       if (count($ll) > 1) {
