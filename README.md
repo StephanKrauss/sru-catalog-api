@@ -54,12 +54,12 @@ var_dump($sruCatalog->parse([
 | publisherPlace | Verleger Ort | x |  | x |  |  |
 | year | Jahr | x |  | x | x |  |
 | language | Sprache | x |  | x |  |  |
-| corperation | Körperschaft | x |  | x |  | x |m
+| corporation | Körperschaft | x |  | x |  | x |m
 
 ## Testing
 
 ``` bash
-$ vendor/bin/phpunit tests/TestAllServices.php 
+$ vendor/bin/phpunit tests/TestAllServices.php
 ```
 
 ## Contributing
