@@ -44,7 +44,7 @@ class ServicesList
     "language" => [
       "de"=> "Sprache"
     ],
-    "corperation" => [
+    "corporation" => [
       "de"=> "Körperschaft"
     ],
   ];
@@ -70,7 +70,7 @@ class ServicesList
         "publisherPlace" => "pica.vlo",
         "year" => "pica.jah",
         "language" => "pica.spr",
-        "corperation" => "pica.kor", //[KOR] Körperschaft, Konferenz, Geografikum (Stichwort)
+        "corporation" => "pica.kor", //[KOR] Körperschaft, Konferenz, Geografikum (Stichwort)
       ],
     ],
     "swb" => [
@@ -142,7 +142,7 @@ marcxml.identifier : funktioniert nicht
         "publisherPlace" => "dc.publisher",
         "year" => "dc.date",
         "language" => "pica.spr",
-        "corperation" => "dnb.koe",
+        "corporation" => "dnb.koe",
         "idn" => "dnb.identifier", //SAME with ISBN
       ],
       "help" => '
@@ -168,7 +168,7 @@ https://services.dnb.de/sru/dnb.dma?operation=explain&version=1.1
         "issn" => "bath.iss",
         "lccn" => "bath.lccn",
         "isxn" => "bath.isbn",
-        "corperation" => "bath.corporateName",
+        "corporation" => "bath.corporateName",
         "idn" => "bath.standardIdentifier",
       ],
     ],
