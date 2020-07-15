@@ -28,11 +28,11 @@ class CatalogMain
    * @param $fields
    * @return array
    */
-  public function parse($fields)
+  public function parse($fields, $params = [])
   {
 
     $error = false;
-    $xml = $this->request($fields);
+    $xml = $this->request($fields, $params);
 
     if ($xml === false) {
       $error = "notFound";
@@ -104,20 +104,16 @@ class CatalogMain
         }
       }
     }
-    //    if($term === false){
-    //      $params["query"] = $fields;
-    //    }else {
-    //      $params["query"] = $service["search"][$fields] . "=" . $term; //978-3-319-51822-0
-    //    }
 
-    $params["maximumRecords"] = 100;//100; //a00 should be enough to capture all results for one ISBN/ISSN
 
+    if(!isset($params["maximumRecords"])) {
+      $params["maximumRecords"] = 100;
+    }
     // create the canonicalized query
     $canonicalized_query = http_build_query($params);//implode("&", $canonicalized_query);
 
     // create request
     $request = $service["host"] . "?" . $canonicalized_query;
-    //var_dump($request);
     $this->services[$this->service]["lasturl"] = $request;
 
     try {
