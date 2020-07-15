@@ -19,6 +19,11 @@ Via Composer
 $ composer require libreja/sru-catalog-api
 ```
 
+## Demo
+An online demo can be found here https://wikioverdata.toolforge.org/sru-catalog-demo/
+
+For an example response please click [here](https://wikioverdata.toolforge.org/sru-catalog-demo/api.php?service=gvk&maximumRecords=3&fields[title]=Der Richter und sein Henker)
+
 ## Usage
 
 Currently you may choose from 5 services
